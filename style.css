@@ -1,0 +1,80 @@
+h1 {
+  font-style: italic;
+  font-size: x-large;
+  text-decoration: underline;
+  text-decoration-color:#71b7e6;
+}
+body {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container {
+  box-sizing: border-box;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  /* margin-top: -29px;  */
+  margin: 50px auto;
+}
+
+form {
+  width: 70%; /* adjust this value to control the form's width */
+  margin: auto;
+}
+input[type="submit"] {
+  width: 500px; /* adjust this value to increase or decrease the height */
+  /* Add any other styles you want for the button */
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+/* input[type="radio"]{
+    float:left;
+    width:auto;
+    margin-right: 20em;
+    
+} */
+.gender-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.gender-container input[type="radio"] {
+  margin-right: 10px; /* Adjust as needed to add space between the radio buttons */
+}
+/* Media Query for Smaller Screens */
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: calc(100% - 20px); /* Adjusted to accommodate padding */
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Media Query for Smaller Screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95%; /* Adjusted to fit smaller screens */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: calc(100% - 20px); /* Adjusted to accommodate padding */
+  }
+}
+
+
+
+  
